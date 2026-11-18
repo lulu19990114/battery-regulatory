@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产品法规信息 · Product Regulatory Information</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <div class="brand" id="brand"></div>
+  <div class="brand-sub" id="brand-sub"></div>
+</div></div>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>产品法规与合规信息</h1>
+    <div class="name">Product Regulatory &amp; Compliance Information — 请选择产品 / Select a product</div>
+  </div>
+
+  <div class="plist">
+    <a class="pcard" href="product-1.html"><span class="t">产品 1 / Model 1</span><span class="a">查看 &rarr;</span></a>
+    <a class="pcard" href="product-2.html"><span class="t">产品 2 / Model 2</span><span class="a">查看 &rarr;</span></a>
+    <a class="pcard" href="product-3.html"><span class="t">产品 3 / Model 3</span><span class="a">查看 &rarr;</span></a>
+    <a class="pcard" href="product-4.html"><span class="t">产品 4 / Model 4</span><span class="a">查看 &rarr;</span></a>
+  </div>
+
+  <div class="card guide">
+    <h2>内容更新说明 / How to update</h2>
+    <p>本页由四个静态页面 + 一个内容数据文件组成。法规信息完成后，<strong>只需修改 <code>assets/data.js</code> 一个文件</strong>，四款产品的信息即可全部更新，<strong>二维码无需任何改动</strong>。</p>
+    <h3>操作步骤</h3>
+    <ol>
+      <li>打开 <code>assets/data.js</code>，找到对应产品（P1 / P2 / P3 / P4）。</li>
+      <li>把其中的 <code>待补充 / TBC</code>、<code>待上传 / To be uploaded</code> 替换为真实内容。</li>
+      <li>文件下载：在 <code>documents</code> 数组中按格式添加 <code>{ title: "文件名", url: "文件地址" }</code>。</li>
+      <li>保存后，用新的 <code>data.js</code> 覆盖服务器上同名文件即可，立即生效。</li>
+    </ol>
+    <p style="margin-top:10px">提示：所有内容集中在一个文件里，是为了让你以后更新信息时不必碰页面结构和二维码。</p>
+  </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script>
+  document.getElementById("brand").textContent = SITE.brand;
+  document.getElementById("brand-sub").textContent = SITE.brandSub;
+</script>
+</body>
+</html>

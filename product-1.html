@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>法规信息</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-product="P1">
+<div class="topbar"><div class="wrap">
+  <div class="brand" id="brand"></div>
+  <div class="brand-sub" id="brand-sub"></div>
+</div></div>
+
+<div class="wrap">
+  <a class="back" href="index.html">&larr; 产品列表 / All products</a>
+
+  <div class="status">
+    <span class="dot"></span>
+    <div><strong>信息待补充</strong> — 本页面为法规信息展示模板，具体内容待制造商提供后更新。二维码不会因此改变。<br>
+    <span style="color:#9a6a12">Information pending — this is a template; content will be updated once provided by the manufacturer. The QR code will not change.</span></div>
+  </div>
+
+  <div class="hero">
+    <span class="model" id="model"></span>
+    <h1>产品法规与合规信息<br>Product Regulatory &amp; Compliance Information</h1>
+    <div class="name" id="pname"></div>
+  </div>
+
+  <div class="card">
+    <h2>电池信息 / Battery information</h2>
+    <div class="kv" id="battery"></div>
+  </div>
+
+  <div class="card">
+    <h2>法规符合性 / Regulatory compliance</h2>
+    <div class="clist" id="compliance"></div>
+  </div>
+
+  <div class="card">
+    <h2>安全警示 / Safety warnings</h2>
+    <ul class="safety" id="safety"></ul>
+  </div>
+
+  <div class="card">
+    <h2>文件下载 / Documents</h2>
+    <div id="docs"></div>
+  </div>
+
+  <div class="card">
+    <h2>制造商 / Manufacturer</h2>
+    <div class="kv">
+      <div class="item min"><div class="k">公司名称 / Company</div><div class="v" id="mfg-name"></div></div>
+      <div class="item min"><div class="k">地址 / Address</div><div class="v" id="mfg-addr"></div></div>
+      <div class="item min"><div class="k">联系方式 / Contact</div><div class="v" id="mfg-contact"></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>回收与处置 / Disposal</h2>
+    <div class="disposal" id="disposal"></div>
+  </div>
+
+  <div class="foot">
+    <div id="footer-note"></div>
+    <div style="margin-top:6px">最后审核 / Last reviewed: <span id="review"></span></div>
+  </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

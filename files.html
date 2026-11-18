@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文件下载 / Documents</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <div class="brand" id="brand"></div>
+  <div class="brand-sub">Documents / 法规文件</div>
+</div></div>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>法规文件下载</h1>
+    <div class="name">Regulatory documents — 点击打开文件 / Tap to open</div>
+  </div>
+
+  <div class="plist">
+    <a class="pcard" href="doc-1.pdf" target="_blank" rel="noopener">
+      <span class="t">文件 1 / Document 1</span><span class="a">打开 PDF &rarr;</span>
+    </a>
+    <a class="pcard" href="doc-2.pdf" target="_blank" rel="noopener">
+      <span class="t">文件 2 / Document 2</span><span class="a">打开 PDF &rarr;</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>说明 / Note</h2>
+    <p style="font-size:13px;color:var(--ink-soft)">
+      文件内容更新时，只需在仓库中用同名 PDF 覆盖上传，本页链接与二维码均保持不变。<br>
+      To update a document, simply overwrite the PDF with the same filename in the repository — links and QR codes stay unchanged.
+    </p>
+  </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script>document.getElementById("brand").textContent = SITE.brand;</script>
+</body>
+</html>
